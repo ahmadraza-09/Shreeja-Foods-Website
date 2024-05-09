@@ -1,0 +1,80 @@
+.welcome-section {
+    height: fit-content;
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-section>h3 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/asset\ 3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 65px;
+    background-position: center;
+    font-weight: 500;
+}
+
+.welcome-section h2 {
+    font-size: 40px;
+}
+
+.welcome-cards {
+    width: 1100px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.welcome-card {
+    width: 250px;
+    height: 340px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.welcome-card:hover {
+    transform: translateY(-10px);
+}
+
+.welcome-card p {
+    font-size: 14px;
+}
+
+.image-container {
+    position: relative;
+    width: fit-content;
+}
+
+.welcome-card img {
+    width: 100px;
+}
+
+.second-image {
+    display: none;
+}
+
+.first-image:hover {
+    display: none;
+}
+
+.first-image:hover+.second-image {
+    display: inline-block;
+}
