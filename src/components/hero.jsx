@@ -21,9 +21,10 @@ const Hero = () => {
     <div className='hero'>
         <Swiper 
         modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
-        // autoplay={{ delay: 5000, disableOnInteraction: false }} 
+        autoplay={{ delay: 5000, disableOnInteraction: false }} 
         spaceBetween={30}
         slidesPerView={1}
+        navigation={true}
         style={{ maxWidth: '100%', minWidth: '300px' , padding: '0px 0px' }}
         pagination={{ clickable: true }}
         breakpoints={{

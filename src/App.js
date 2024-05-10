@@ -9,7 +9,7 @@ function App() {
     <>
       {<Header/>}
       {<Hero/>}
-      {/* {<WelcomeSection/>} */}
+      {<WelcomeSection/>}
       {/* {<Footer/>} */}
       
     </>
