@@ -45,7 +45,10 @@ const Hero = () => {
             <div className="slider-card-content">
                 <h3>Raw <span>makhana</span></h3>
                 <h2>Raw Makhana</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint optio.</p>
+                <p>
+                  Tried these foxnuts and they are truly true to their word. Organic and yummy.
+							    A must try for everyone looking for healthy munching options.
+                </p>
                 <button>Shop Now <i class="fa-solid fa-angles-right"></i></button>
             </div>
           </div>
@@ -55,7 +58,10 @@ const Hero = () => {
             <div className="slider-card-content">
                 <h3>Dry <span>& Fruits</span></h3>
                 <h2>Dry Fruits</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint optio.</p>
+                <p>
+                  "Dry fruits: Energize your day with nature's bounty. Bursting with sweetness and vitality, 
+							    our Dry Fruits are a delicious boost of natural goodness. From sunrise to sunset, savor the freshness of every bite."
+                </p>
                 <button>Shop Now <i class="fa-solid fa-angles-right"></i></button>
             </div>
           </div>
@@ -65,7 +71,11 @@ const Hero = () => {
             <div className="slider-card-content">
                 <h3>Our PremiumSpices</h3>
                 <h2>Our Premium Spices</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint optio.</p>
+                <p>
+                  "Spice up your life with our vibrant array of flavors! From the fiery kick of chili to the aromatic 
+                  allure of cinnamon, our spices add depth and excitement to every dish. Elevate your 
+                  culinary creations and embark on a journey of tantalizing tastes with our premium selection of spices."
+                </p>
                 <button>Shop Now <i class="fa-solid fa-angles-right"></i></button>
             </div>
           </div>

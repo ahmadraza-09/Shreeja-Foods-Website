@@ -1,4 +1,5 @@
 import './App.css';
+import Banners from './components/banners';
 import Footer from './components/footer';
 import Header from './components/header';
 import Hero from './components/hero';
@@ -10,8 +11,8 @@ function App() {
       {<Header/>}
       {<Hero/>}
       {<WelcomeSection/>}
-      {/* {<Footer/>} */}
-      
+      {<Banners/>}
+      {<Footer/>}
     </>
   );
 }
