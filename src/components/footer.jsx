@@ -13,7 +13,7 @@ const Footer = () => {
             <div class="footer-col">
                 {/* <h2>Health<span>Care</span></h2> */}
                 <img src="images/asset 0.png" alt="" />
-                <p>Premium Dry Fruits for Health and Happiness.</p>
+                <p>Healthy Food... Healthy Life...</p>
                 <div className="contact-col">
                     <p>
                         <i class="fa-solid fa-location-dot"></i>
@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className="footer-copyright">
             <div className="footer-copyright-left">
-                <p>Copyright © 2024</p> <img src="images/asset 0.png" alt="" />
+                <p>Copyright © 2024</p>
             </div>
 
             <div className="footer-copyright-right">

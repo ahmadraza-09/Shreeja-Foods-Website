@@ -63,10 +63,10 @@ const OurProducts = () => {
           {selectedCategory === 'Makhana' && (
             <div className="product-card">
               <div className="product-image">
-                <img src="images/asset 18.png" alt="" />
+                <img src="images/asset 22.png" alt="" />
               </div>
               <div className="product-content">
-                <h3>Makhana Gold</h3>
+                <h3>Makhana Silver</h3>
               </div>
             </div>
           )}
@@ -86,17 +86,37 @@ const OurProducts = () => {
                 <img src="images/asset 17.png" alt="" />
               </div>
               <div className="product-content">
-                <h3>Spices</h3>
+                <h3>Gram Masala</h3>
               </div>
             </div>
           )}
-          {selectedCategory === 'Makhana' && (
+          {selectedCategory === 'Spices' && (
             <div className="product-card">
               <div className="product-image">
-                <img src="images/asset 19.png" alt="" />
+                <img src="images/asset 20.png" alt="" />
               </div>
               <div className="product-content">
-                <h3>Makhana</h3>
+                <h3>Gram Masala</h3>
+              </div>
+            </div>
+          )}
+          {selectedCategory === 'Dry Fruits' && (
+            <div className="product-card">
+              <div className="product-image">
+                <img src="images/asset 16.png" alt="" />
+              </div>
+              <div className="product-content">
+                <h3>Dry Fruits</h3>
+              </div>
+            </div>
+          )}
+          {selectedCategory === 'Dry Fruits' && (
+            <div className="product-card">
+              <div className="product-image">
+                <img src="images/asset 21.png" alt="" />
+              </div>
+              <div className="product-content">
+                <h3>Dry Fruits</h3>
               </div>
             </div>
           )}
