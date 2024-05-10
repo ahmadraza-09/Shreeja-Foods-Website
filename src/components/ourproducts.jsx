@@ -46,7 +46,17 @@ const OurProducts = () => {
                 <img src="images/asset 18.png" alt="" />
               </div>
               <div className="product-content">
-                <h3>Makhana</h3>
+                <h3>Makhana Gold</h3>
+              </div>
+            </div>
+          )}
+          {selectedCategory === 'Makhana' && (
+            <div className="product-card">
+              <div className="product-image">
+                <img src="images/asset 19.png" alt="" />
+              </div>
+              <div className="product-content">
+                <h3>Makhana Diamond</h3>
               </div>
             </div>
           )}
@@ -56,27 +66,17 @@ const OurProducts = () => {
                 <img src="images/asset 18.png" alt="" />
               </div>
               <div className="product-content">
-                <h3>Makhana</h3>
+                <h3>Makhana Gold</h3>
               </div>
             </div>
           )}
           {selectedCategory === 'Makhana' && (
             <div className="product-card">
               <div className="product-image">
-                <img src="images/asset 18.png" alt="" />
+                <img src="images/asset 19.png" alt="" />
               </div>
               <div className="product-content">
-                <h3>Makhana</h3>
-              </div>
-            </div>
-          )}
-          {selectedCategory === 'Dry Fruits' && (
-            <div className="product-card">
-              <div className="product-image">
-                <img src="images/asset 16.png" alt="" />
-              </div>
-              <div className="product-content">
-                <h3>Dry Fruits</h3>
+                <h3>Makhana Diamond</h3>
               </div>
             </div>
           )}
