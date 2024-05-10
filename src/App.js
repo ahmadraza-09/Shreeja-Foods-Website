@@ -3,6 +3,7 @@ import Banners from './components/banners';
 import Footer from './components/footer';
 import Header from './components/header';
 import Hero from './components/hero';
+import OurProducts from './components/ourproducts';
 import WelcomeSection from './components/welcomesection';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       {<Hero/>}
       {<WelcomeSection/>}
       {<Banners/>}
+      {<OurProducts/>}
       {<Footer/>}
     </>
   );
