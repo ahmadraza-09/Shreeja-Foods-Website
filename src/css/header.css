@@ -1,7 +1,8 @@
 .header {
     width: 100%;
-    height: 80px;
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -12,6 +13,44 @@
     /* border: 2px solid #000; */
 }
 
+.navbar-banner {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.left-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left-banner a {
+    color: #fff;
+}
+
+.left-banner>.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.left-banner>.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+
 .background {
     background-color: #fff;
 }
@@ -19,11 +58,17 @@
 .header.active {
     background-color: #F3CA52;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.navbar-banner.active {
+    background-color: #ed1b24;
 }
 
 .navbar {
     width: 100%;
-    height: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,6 +124,8 @@
     font-size: 25px;
     cursor: pointer;
 }
+
+
 
 .navbar .search-cart>button {
     width: fit-content;

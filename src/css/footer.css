@@ -9,7 +9,8 @@ footer {
     align-items: start;
     justify-content: space-between;
     gap: 20px;
-    background-color: #cee45e;
+    /* background-color: #cee45e; */
+    background-color: #F3CA52;
 }
 
 a {

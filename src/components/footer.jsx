@@ -1,17 +1,16 @@
 import React from 'react'
 import '../css/footer.css';
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
   return (
     <>
       <footer>
         <div class="row">
             <div class="footer-col">
-                {/* <h2>Health<span>Care</span></h2> */}
                 <img src="images/asset 0.png" alt="" />
                 <p>Healthy Food... Healthy Life...</p>
                 <div className="contact-col">
@@ -38,9 +37,9 @@ const Footer = () => {
             </div>
             <div class="footer-col">
                 <h4>menu</h4>
-                <a>home</a>
-                <a>about</a>
-                <a>shop</a>
+                <a onClick={() => {navigate('/')}}>home</a>
+                <a onClick={() => {navigate('/')}}>about</a>
+                <a onClick={() => {navigate('/')}}>shop</a>
                 <a>blog</a>
                 <a>gallery</a>
                 <a>contact</a>

@@ -28,6 +28,21 @@ const Header = () => {
     return (
         <>
             <div className={`header ${navbarsection || location.pathname !== '/' ? 'active background ' : ''}`}>
+                {/* <div className={`navbar-banner ${navbarsection ? 'active background ' : ''}`}>
+                    <div className="left-banner">
+                        <div className="contact">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <a href="tel:8102254452" target="_blank">+91 8102254452</a>
+                        </div>
+                        |
+                        <div className="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:Shreejamasale@gmail.com" target="_blank" >Shreejamasale@gmail.com</a>
+                        </div>
+                    </div>
+                    <div className="right-banner"></div>
+                </div> */}
+
                 <div className="navbar">
                     <input type="checkbox" id='check' checked={showMenu} onChange={toggleMenu}/>
 
@@ -38,14 +53,15 @@ const Header = () => {
                     <div className={`menu ${showMenu ? 'show' : ''}`}>
                         <li onClick={() => {navigate('/')}} className={`${location.pathname === '/' ? 'selected' : ''}`}>Home</li>
                         <li onClick={() => {navigate('/about')}} className={`${location.pathname === '/about' ? 'selected' : ''}`}>About</li>
-                        <li>Shop</li>
+                        <li onClick={() => {navigate('/shop')}} className={`${location.pathname === '/shop' ? 'selected' : ''}`}>Shop</li>
                         <li>Blog</li>
                         <li>Gallery</li>
                         <li>Contact</li>
                     </div>
 
                     <div className="search-cart">
-                        <button>Shop Now</button>
+                        <i class="fa-solid fa-magnifying-glass" onClick={() => {navigate('/shop')}}></i>
+                        <button onClick={() => {navigate('/shop')}}>Shop Now</button>
                         <label className={showMenu} htmlFor="check">
                             {showMenu ? 
                               <i className="fa-solid fa-close"></i> 
