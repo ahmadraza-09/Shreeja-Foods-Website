@@ -23,6 +23,10 @@ const Shop = () => {
     setSearchQuery(e.target.value);
   };
 
+  const handleSearchClick = (e) => {
+    e.preventDefault(); 
+  };
+
   const filteredProducts = products.filter(product =>
     product.productName.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -38,7 +42,7 @@ const Shop = () => {
           value={searchQuery} 
           onChange={handleSearchChange} 
         />
-        <button>Search</button>
+        <button onClick={handleSearchClick}>Search</button>
       </form> 
       <div className="product-list">
         {filteredProducts.length > 0 ? (
