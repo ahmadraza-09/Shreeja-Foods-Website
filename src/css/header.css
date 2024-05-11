@@ -125,8 +125,6 @@
     cursor: pointer;
 }
 
-
-
 .navbar .search-cart>button {
     width: fit-content;
     height: fit-content;
@@ -182,5 +180,13 @@
     .search-cart label {
         display: block;
         font-size: 25px;
+    }
+
+}
+
+/* 100px and 480px  */
+@media (min-width: 100px) and (max-width: 480px) {
+    .navbar .search-cart>i:first-child {
+        display: none;
     }
 }
