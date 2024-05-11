@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-image: url('./images/dryfruit1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .our-product-section>h3 {

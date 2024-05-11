@@ -55,6 +55,30 @@
     padding-right: 20px;
 }
 
+.card-content1 {
+    background-image: url('./images/dryfruit4.png');
+    background-size: contain;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.card-content2 {
+    background-image: url('./images/dryfruit1.png');
+    background-size: cover;
+    background-position: top;
+
+}
+
+.card-content3 {
+    background-image: url('./images/dryfruit6.png');
+    background-size: 150px;
+    background-position: top right;
+    background-repeat: no-repeat;
+
+}
+
 .slider-card-content h3 {
     font-size: 20px;
     font-weight: 300;

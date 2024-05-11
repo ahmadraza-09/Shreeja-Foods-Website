@@ -8,6 +8,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url('./images/dryfruit1.png');
+    background-size: contain;
+    background-position: left;
 }
 
 .shop-section>h2 {

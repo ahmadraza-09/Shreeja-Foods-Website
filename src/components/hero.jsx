@@ -42,7 +42,7 @@ const Hero = () => {
       >
         <SwiperSlide>
           <div className='slider-card'>
-            <div className="slider-card-content">
+            <div className="slider-card-content card-content1">
                 <h3>Raw <span>makhana</span></h3>
                 <h2>Raw Makhana</h2>
                 <p>
@@ -55,7 +55,7 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className='slider-card slider-card2'>
-            <div className="slider-card-content">
+            <div className="slider-card-content card-content2">
                 <h3>Dry <span>& Fruits</span></h3>
                 <h2>Dry Fruits</h2>
                 <p>
@@ -68,7 +68,7 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className='slider-card slider-card3'>
-            <div className="slider-card-content">
+            <div className="slider-card-content card-content3">
                 <h3>Our PremiumSpices</h3>
                 <h2>Our Premium Spices</h2>
                 <p>
