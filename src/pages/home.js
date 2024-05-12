@@ -5,6 +5,7 @@ import Header from '../components/header';
 import Hero from '../components/hero';
 import OurProducts from '../components/ourproducts';
 import WelcomeSection from '../components/welcomesection';
+import Competitors from '../components/competitors';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       {<WelcomeSection/>}
       {<OurProducts/>}
       {<Banners images={['images/asset 13.jpeg']}/>}
+      {<Competitors/>}
       {<Banners images={['images/asset 14.jpeg']}/>}
       {<Banners images={['images/asset 15.jpeg']}/>}
       {<Footer/>}

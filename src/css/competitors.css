@@ -1,0 +1,46 @@
+.competitors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.competitors-list {
+    margin-top: 30px;
+}
+
+.competitor {
+    /* padding: 0px 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.competitor>h3 {
+    font-size: 35px;
+}
+
+.competitor img {
+    width: 150px;
+}
+
+.competitors>h2 {
+    width: fit-content;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.competitors>h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40%;
+    height: 5px;
+    border-radius: 55px;
+    background-color: #ed1b24;
+}

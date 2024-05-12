@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .about-banner>img {
@@ -39,6 +40,7 @@
 }
 
 .about-box img {
+    max-width: 550px;
     width: 550px;
     border-radius: 10px;
 }

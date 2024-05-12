@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/about.css';
 import Banners from '../components/banners';
 import LaunchedItem from './launcheditem';
+import Competitors from './competitors';
 
 const AboutComp = () => {
   const launchedItems = [
@@ -76,6 +77,40 @@ const AboutComp = () => {
                   itemName={item.itemName}
                 />
               ))}
+            </div>
+          </div>
+
+          <Competitors/>
+
+          <div className="about-box">
+            <h2>Our Vision & Mission</h2>
+            <div className="image-content">
+              <div className="image">
+                <img src="images/vision-mission.jpeg" alt="" />
+              </div>
+              <div className="content">
+                <div className="vission">
+                  <h3>Vision</h3>
+                  <p>
+                    To be a globally impacting food processing company enriching lives with innovation, integrity and superiority and to be the most trusted, authentic, premium Indian brand, bringing regional taste diversity in all its authenticity and freshness.
+                  </p>
+                </div>
+
+                <div className="mission">
+                  <h3>Mission</h3>
+                  <p>
+                    To exceed customer expectations in the processing, distribution and marketing of safe, tasty and high-quality packaged food products.
+                  </p>
+                  <br />
+                  <p>
+                    To base our operations on values, commitment, experience and knowledge of our people, partners and investors.
+                  </p>
+                  <br />
+                  <p>
+                    To create, control and monitor the quality and origin of the products by constant value addition to the base farmers and dealing with the challenges prevailing in the market.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
