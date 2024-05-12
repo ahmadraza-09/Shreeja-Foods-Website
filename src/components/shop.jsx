@@ -50,7 +50,7 @@ const Shop = () => {
             <Product key={index} imageUrl={product.imageUrl} productName={product.productName} />
           ))
         ) : (
-          <p>No Products Available !</p>
+          <p className='no-data'>Product Not Available !</p>
         )}
       </div>
     </div>

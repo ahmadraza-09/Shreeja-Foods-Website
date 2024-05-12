@@ -2,14 +2,12 @@
     width: 100%;
     height: fit-content;
     background-color: #fff;
-    gap: 0px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .banners-section img {
-    width: 100%
-    
+    width: 100%;
 }

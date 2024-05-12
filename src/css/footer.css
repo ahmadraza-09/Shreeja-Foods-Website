@@ -11,6 +11,7 @@ footer {
     gap: 20px;
     /* background-color: #cee45e; */
     background-color: #F3CA52;
+    border-top: 5px solid #ed1b24;
 }
 
 a {

@@ -2,3 +2,58 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     background-color: #fff;
 }
+
+.product-card {
+    width: 240px;
+    height: 340px;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    /* border: 2px solid #000; */
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card .product-image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card .product-content {
+    height: fit-content;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card h3 {
+    background-color: #81b03f;
+    color: #fff;
+    width: 90%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+.product-card h3:hover {
+    background-color: #fff;
+    color: #000;
+}

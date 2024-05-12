@@ -12,10 +12,10 @@ const Home = () => {
       {<Header/>}
       {<Hero/>}
       {<WelcomeSection/>}
+      {<OurProducts/>}
       {<Banners images={['images/asset 13.jpeg']}/>}
       {<Banners images={['images/asset 14.jpeg']}/>}
       {<Banners images={['images/asset 15.jpeg']}/>}
-      {<OurProducts/>}
       {<Footer/>}
     </>
   )
