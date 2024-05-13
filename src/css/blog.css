@@ -48,7 +48,7 @@
     /* border: 2px solid #000; */
 }
 
-.blog-main-section-left>.fa-xmark {
+.blog-main-section-left>label .fa-xmark {
     display: none;
 }
 
