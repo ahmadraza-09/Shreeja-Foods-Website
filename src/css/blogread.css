@@ -1,0 +1,24 @@
+.blog-read-section {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    /* border: 2px solid #000; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-read-image {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.blog-read-image img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.blog-read-image img:hover {
+    transform: scale(1.2);
+}
