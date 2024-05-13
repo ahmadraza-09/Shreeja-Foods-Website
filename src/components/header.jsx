@@ -54,7 +54,7 @@ const Header = () => {
                         <li onClick={() => {navigate('/')}} className={`${location.pathname === '/' ? 'selected' : ''}`}>Home</li>
                         <li onClick={() => {navigate('/about')}} className={`${location.pathname === '/about' ? 'selected' : ''}`}>About</li>
                         <li onClick={() => {navigate('/shop')}} className={`${location.pathname === '/shop' ? 'selected' : ''}`}>Shop</li>
-                        <li>Blog</li>
+                        <li onClick={() => {navigate('/blog')}} className={`${location.pathname === '/blog' ? 'selected' : ''}`}>Blog</li>
                         <li onClick={() => {navigate('/gallery')}} className={`${location.pathname === '/gallery' ? 'selected' : ''}`}>Gallery</li>
                         <li onClick={() => {navigate('/contact')}} className={`${location.pathname === '/contact' ? 'selected' : ''}`}>Contact</li>
                     </div>

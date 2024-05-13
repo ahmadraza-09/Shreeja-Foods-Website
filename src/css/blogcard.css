@@ -1,0 +1,110 @@
+.blog-card {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* margin-top: 40px; */
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.blog-card-image {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.blog-card-image img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.blog-card-image img:hover {
+    transform: scale(1.2);
+}
+
+.blog-card-content {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-card-paragraph {
+    width: 100%;
+}
+
+.blog-card-paragraph p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    max-height: calc(1.4em * 2);
+    line-height: 1.4em;
+    font-size: 14px;
+}
+
+.blog-card-button {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    background-color: #ed1b24;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive */
+/* 768px and 950px */
+@media (min-width: 768px) and (max-width: 950px) {
+    .blog-card {
+        width: 100%;
+        height: 180px;
+    }
+
+}
+
+/* 320px and 628px */
+@media (min-width: 320px) and (max-width: 628px) {
+    .blog-card {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .blog-card-image {
+        width: 100%;
+        height: 150px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .blog-card-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .blog-card-content {
+        width: 100%;
+    }
+
+    .blog-card-content button {
+        width: 100%;
+        height: 40px;
+    }
+
+}
