@@ -24,7 +24,7 @@ const Blog = () => {
   const blogData = [
     {
       id: 1,
-      imageUrl: "https://www.dryfruitbasket.in/storage/media/post/202403281143_post_saffron-storage.jpg",
+      imageUrl: "images/blog-img1.jpg",
       title: "Best Saffron Storage Tips to Preserve Flavour",
       paragraph: (
       <>
@@ -75,7 +75,7 @@ const Blog = () => {
     },
     {
       id: 2,
-      imageUrl: "https://www.dryfruitbasket.in/storage/media/post/202403071910_post_apricot.png",
+      imageUrl: "images/blog-img2.png",
       title: "Apricot For Your Weight Loss Plans and Added Benefits",
       paragraph: (
       <>
@@ -114,7 +114,7 @@ const Blog = () => {
     },
     {
       id: 3,
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR81m6M94Mqo9j7OchI1NwAEHFUY562jvDO_tGweUt_Hw&s",
+      imageUrl: "images/blog-img3.jpeg",
       title: "Makhana During Pregnancy : Nutritious & healthy",
       paragraph: (
       <>
@@ -169,7 +169,7 @@ const Blog = () => {
     },
     {
       id: 4,
-      imageUrl: "https://eatanytime.in/cdn/shop/articles/close-up-healthy-nuts-wooden-background-generative-ai.jpg?v=1702453505&width=1500",
+      imageUrl: "images/blog-img4.webp",
       title: "Is It Good To Eat Mixed Dry Fruits Daily – Eat Anytime",
       paragraph: (
       <>
@@ -227,7 +227,7 @@ const Blog = () => {
     },
     {
       id: 5,
-      imageUrl: "https://healthymaster.in/cdn/shop/articles/WhatsApp_Image_2023-09-29_at_07.07.11.jpg?v=1696566634",
+      imageUrl: "images/blog-img5.webp",
       title: "Benefits of Almonds, Cashews, and Dry Fruits",
       paragraph: (
         <>

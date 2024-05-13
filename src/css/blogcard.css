@@ -46,8 +46,8 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    max-height: calc(1.4em * 2);
+    -webkit-line-clamp: 3;
+    max-height: calc(1.4em * 3);
     line-height: 1.4em;
     font-size: 14px;
 }
