@@ -384,6 +384,7 @@ const Blog = () => {
                   imageUrl={blog.imageUrl}
                   title={blog.title}
                   date={blog.date}
+                  onClick={() => handleBlogCardClick(blog.id)}
                 />
               ))}
             </div>
@@ -401,7 +402,6 @@ const Blog = () => {
               </label>
             </div>
             {selectedBlog === null ? (
-              // Render blog cards when no blog is selected
               blogData.map(blog => (
                 <BlogCard
                   key={blog.id}
