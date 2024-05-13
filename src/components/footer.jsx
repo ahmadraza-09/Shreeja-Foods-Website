@@ -41,7 +41,7 @@ const Footer = () => {
                 <a onClick={() => {navigate('/about')}}>about</a>
                 <a onClick={() => {navigate('/shop')}}>shop</a>
                 <a>blog</a>
-                <a>gallery</a>
+                <a onClick={() => {navigate('/gallery')}}>gallery</a>
                 <a onClick={() => {navigate('/contact')}}>contact</a>
             </div>
             <div class="footer-col">
