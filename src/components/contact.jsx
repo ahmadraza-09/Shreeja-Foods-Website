@@ -14,7 +14,7 @@ const Contact = () => {
                 <img src="images/contact-img.png" alt="" />
             </div>
             <div className="contact-form">
-                <form>
+                <form className='contact-user-form'>
                     <h2>Contact</h2>
                     <input type="text" placeholder='Name'/>
                     <input type="email" placeholder='Email'/>
