@@ -158,6 +158,11 @@
         font-size: 20px;
     }
 
+    .about-box:last-child>h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
     .item-boxes {
         padding: 0px 10px;
     }

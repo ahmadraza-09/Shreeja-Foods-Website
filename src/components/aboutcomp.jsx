@@ -67,7 +67,7 @@ const AboutComp = () => {
           </div>
 
           <div className="about-box">
-            <h2>Items to be launched in next 3 years</h2>
+            <h2>Upcoming Items In Next 3 Years</h2>
             <div className="item-boxes">
               {launchedItems.map((item, index) => (
                 <LaunchedItem

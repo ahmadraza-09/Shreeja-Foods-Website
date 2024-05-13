@@ -38,11 +38,11 @@ const Footer = () => {
             <div class="footer-col">
                 <h4>menu</h4>
                 <a onClick={() => {navigate('/')}}>home</a>
-                <a onClick={() => {navigate('/')}}>about</a>
-                <a onClick={() => {navigate('/')}}>shop</a>
+                <a onClick={() => {navigate('/about')}}>about</a>
+                <a onClick={() => {navigate('/shop')}}>shop</a>
                 <a>blog</a>
                 <a>gallery</a>
-                <a>contact</a>
+                <a onClick={() => {navigate('/contact')}}>contact</a>
             </div>
             <div class="footer-col">
                 <h4>get help</h4>

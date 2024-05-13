@@ -56,7 +56,7 @@ const Header = () => {
                         <li onClick={() => {navigate('/shop')}} className={`${location.pathname === '/shop' ? 'selected' : ''}`}>Shop</li>
                         <li>Blog</li>
                         <li>Gallery</li>
-                        <li>Contact</li>
+                        <li onClick={() => {navigate('/contact')}} className={`${location.pathname === '/contact' ? 'selected' : ''}`}>Contact</li>
                     </div>
 
                     <div className="search-cart">
