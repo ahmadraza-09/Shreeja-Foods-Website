@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../css/blog.css';
 import BlogCard from './blogcard';
 import RecentPostCard from './recentpostcard';
@@ -8,6 +8,9 @@ const Blog = () => {
 
   const [showFilter, setShowFilter] = useState(false);
   const [selectedBlog, setSelectedBlog] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredBlogData, setFilteredBlogData] = useState([]);
+  const [noDataFound, setNoDataFound] = useState(false);
 
   const handleFilterToggle = () => {
     setShowFilter(!showFilter);
@@ -19,6 +22,34 @@ const Blog = () => {
 
   const handleCloseBlogRead = () => {
     setSelectedBlog(null);
+  };
+
+  const handleSearchChange = (event) => {
+    const query = event.target.value;
+    setSearchQuery(query);
+    filterBlogData(query.trim());
+  };
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    if (searchQuery.trim() === '') {
+      setFilteredBlogData(blogData);
+    } else {
+      filterBlogData(searchQuery.trim());
+    }
+    setSelectedBlog(null);
+  };
+
+  useEffect(() => {
+    setFilteredBlogData(blogData);
+  }, []);
+
+  const filterBlogData = (query) => {
+    const filteredData = blogData.filter(blog =>
+      blog.title.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredBlogData(filteredData);
+    setNoDataFound(filteredData.length === 0);
   };
 
   const blogData = [
@@ -367,14 +398,14 @@ const Blog = () => {
           <div className={`blog-main-section-left ${showFilter ? 'show' : 'hide'}`}>
             <label htmlFor="filter-check" onClick={handleFilterToggle}><i className="fa-solid fa-xmark"></i></label>
             <input type="checkbox" id='filter-check'/>
-            <form className='blog-search'>
+            <form className='blog-search' onSubmit={handleSearchSubmit}>
               <input 
                 type="text" 
                 placeholder='Search Blogs...' 
-                // value={searchQuery} 
-                // onChange={handleSearchChange} 
+                value={searchQuery} 
+                onChange={handleSearchChange} 
               />
-              <button>Search</button>
+              <button type='submit'>Search</button>
             </form>
             <h3>Recent Posts</h3>
             <div className="recent-post">
@@ -391,7 +422,7 @@ const Blog = () => {
           </div>
           <div className="blog-main-section-right">
             <div className="blog-main-section-right-header">
-              {selectedBlog !== null && ( // Render "Back" button only when a blog is selected
+              {selectedBlog !== null && (
                 <label className="blog-back" onClick={handleCloseBlogRead}>
                   <h4>Back</h4>
                 </label>
@@ -401,27 +432,30 @@ const Blog = () => {
                 <img src="images/filter.png" alt="" />
               </label>
             </div>
-            {selectedBlog === null ? (
-              blogData.map(blog => (
-                <BlogCard
-                  key={blog.id}
-                  id={blog.id}
-                  imageUrl={blog.imageUrl}
-                  title={blog.title}
-                  paragraph={blog.paragraph}
-                  buttonText={blog.buttonText}
-                  onClick={() => handleBlogCardClick(blog.id)}
-                />
-              ))
+            {noDataFound ? (
+              <p>Blog Not Available!</p>
             ) : (
-              // Render blog read when a blog is selected
-              <BlogRead
-                title={blogData[selectedBlog - 1].title}
-                imageUrl={blogData[selectedBlog - 1].imageUrl}
-                paragraph={blogData[selectedBlog - 1].paragraph}
-                onClose={handleCloseBlogRead}
-              />
-            )}
+              selectedBlog === null ? (
+                filteredBlogData.map(blog => (
+                  <BlogCard
+                    key={blog.id}
+                    id={blog.id}
+                    imageUrl={blog.imageUrl}
+                    title={blog.title}
+                    paragraph={blog.paragraph}
+                    buttonText={blog.buttonText}
+                    onClick={() => handleBlogCardClick(blog.id)}
+                  />
+                ))
+                ) : (
+                  <BlogRead
+                    title={blogData[selectedBlog - 1].title}
+                    imageUrl={blogData[selectedBlog - 1].imageUrl}
+                    paragraph={blogData[selectedBlog - 1].paragraph}
+                    onClose={handleCloseBlogRead}
+                  />
+                )
+              )}
           </div>
         </div>
       </div>

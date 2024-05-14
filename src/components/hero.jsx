@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import '../css/hero.css'
 
@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar';
 
 const Hero = () => {
 
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -49,7 +49,7 @@ const Hero = () => {
                   Tried these foxnuts and they are truly true to their word. Organic and yummy.
 							    A must try for everyone looking for healthy munching options.
                 </p>
-                <button>Shop Now <i class="fa-solid fa-angles-right"></i></button>
+                <button onClick={() => {navigate('/shop')}}>Shop Now <i class="fa-solid fa-angles-right"></i></button>
             </div>
           </div>
         </SwiperSlide>
@@ -62,7 +62,7 @@ const Hero = () => {
                   "Dry fruits: Energize your day with nature's bounty. Bursting with sweetness and vitality, 
 							    our Dry Fruits are a delicious boost of natural goodness. From sunrise to sunset, savor the freshness of every bite."
                 </p>
-                <button>Shop Now <i class="fa-solid fa-angles-right"></i></button>
+                <button onClick={() => {navigate('/shop')}}>Shop Now <i class="fa-solid fa-angles-right"></i></button>
             </div>
           </div>
         </SwiperSlide>
@@ -76,7 +76,7 @@ const Hero = () => {
                   allure of cinnamon, our spices add depth and excitement to every dish. Elevate your 
                   culinary creations and embark on a journey of tantalizing tastes with our premium selection of spices."
                 </p>
-                <button>Shop Now <i class="fa-solid fa-angles-right"></i></button>
+                <button onClick={() => {navigate('/shop')}}>Shop Now <i class="fa-solid fa-angles-right"></i></button>
             </div>
           </div>
         </SwiperSlide>
