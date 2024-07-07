@@ -3,12 +3,12 @@ import { useNavigate, useLocation } from "react-router-dom";
 import '../css/header.css';
 
 const Header = () => {
-
     const navigate = useNavigate();
     const location = useLocation();
 
     const [navbarsection, setNavbarSection] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
+    const [showCeoDropdown, setShowCeoDropdown] = useState(false);
 
     const changeBackground = () => {
         if (window.scrollY >= 100) {
@@ -24,6 +24,9 @@ const Header = () => {
         setShowMenu(!showMenu);
     };
 
+    const toggleCeoDropdown = () => {
+        setShowCeoDropdown(!showCeoDropdown);
+    };
 
     return (
         <>
@@ -54,8 +57,12 @@ const Header = () => {
                         <li onClick={() => {navigate('/')}} className={`${location.pathname === '/' ? 'selected' : ''}`}>Home</li>
 
                         <li className='about-dropdown'>
-                          <h3 onClick={() => {navigate('/about')}} className={`${location.pathname === '/about' ? 'selected' : ''}`}>About <i class="fa-solid fa-angle-down"></i></h3>  
-                          <h3 className='ceo-dropdown' onClick={() => {navigate('/our-ceo')}}>Our CEO's</h3>
+                          <h3 onClick={() => {navigate('/about')}} className={`${location.pathname === '/about' ? 'selected' : ''}`}>
+                            About <i className="fa-solid fa-angle-down" onClick={toggleCeoDropdown}></i>
+                          </h3>
+                          {showCeoDropdown && (
+                              <h3 className='ceo-dropdown' onClick={() => {navigate('/our-ceo')}}>Our CEO's</h3>
+                          )}
                         </li>
 
                         <li onClick={() => {navigate('/shop')}} className={`${location.pathname === '/shop' ? 'selected' : ''}`}>Shop</li>
@@ -65,7 +72,7 @@ const Header = () => {
                     </div>
 
                     <div className="search-cart">
-                        <i class="fa-solid fa-magnifying-glass" onClick={() => {navigate('/shop')}}></i>
+                        <i className="fa-solid fa-magnifying-glass" onClick={() => {navigate('/shop')}}></i>
                         <button onClick={() => {navigate('/shop')}}>Shop Now</button>
                         <label className={showMenu} htmlFor="check">
                             {showMenu ? 

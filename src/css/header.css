@@ -118,7 +118,7 @@
     width: 100px;
     position: absolute;
     /* transform: translateY(-80px); */
-    display: none;
+    /* display: none; */
     transition: all 0.5s ease-in-out;
     background-color: #ed1b24;
     color: #fff;
@@ -128,7 +128,7 @@
 
 .about-dropdown:hover .ceo-dropdown {
     /* transform: translateY(0px); */
-    display: block;
+    /* display: block; */
 }
 
 .selected::before {
@@ -211,6 +211,14 @@
         justify-content: start;
         padding-top: 40px;
         display: none;
+    }
+
+    .menu li h3 {
+        font-size: 28px;
+    }
+
+    .ceo-dropdown {
+        width: 150px;
     }
 
     .search-cart label {
