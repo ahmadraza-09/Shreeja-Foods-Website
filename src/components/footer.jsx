@@ -12,7 +12,7 @@ const Footer = () => {
         <div class="row">
             <div class="footer-col">
                 <img src="images/asset 0.png" alt="" />
-                <p>Healthy Food... Healthy Life...</p>
+                <p className='discription'>Healthy Food... Healthy Life...</p>
                 <div className="contact-col">
                     <p><i class="fa-solid fa-location-dot"></i>Reg.Off: 205,BlockA,Capital Tower,Frazer Road,Patna-800001.</p>
                     <p><i class="fa-solid fa-location-dot"></i>Factory: Near Krishna Niketan School,Jakariyapur,Patna-800007.</p>

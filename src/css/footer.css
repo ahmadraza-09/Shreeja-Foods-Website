@@ -49,6 +49,9 @@ footer .row {
     font-size: 15px;
     line-height: 20px;
     margin-top: 20px;
+}
+
+.footer-col .discription {
     font-style: italic;
 }
 
