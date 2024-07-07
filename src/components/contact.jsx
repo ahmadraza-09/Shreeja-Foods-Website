@@ -28,13 +28,13 @@ const Contact = () => {
         <div className="contact-boxes">
           <div className="contact-box">
             <div className="contact-box-right">
-              <p><i class="fa-solid fa-location-dot"></i>Reg.Off: 205,BlockA,Capital Tower,Frazer Road,Patns-800001.</p>
-              <p><i class="fa-solid fa-location-dot"></i>Reg.Off: 205,BlockA,Capital Tower,Frazer Road,Patns-800001.</p>
+              <p><i class="fa-solid fa-location-dot"></i>Reg.Off: 205, BlockA, Capital Tower, Frazer Road, Patna-800001.</p>
+              <p><i class="fa-solid fa-location-dot"></i>Factory: Near Krishna Niketan School, Jakariyapur, Patna-800007.</p>
             </div>
           </div>
           <div className="contact-box">
             <div className="contact-box-right">
-              <a href="tel:8102254452" target='_blank'><i class="fa-solid fa-phone-volume"></i>+91 8102254452</a>
+              <a href="tel:8102254452" target='_blank'><i class="fa-solid fa-headset"></i>+91 8102254452</a>
               <a href="mailto:shreejamasale@gmail.com" target='_blank'><i class="fa-solid fa-envelope"></i>shreejamasale@gmail.com</a>
             </div>
           </div>

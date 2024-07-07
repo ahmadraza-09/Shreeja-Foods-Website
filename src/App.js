@@ -6,6 +6,7 @@ import ShopPage from './pages/shoppage';
 import ContactPage from './pages/contactpage';
 import GalleryPage from './pages/gallerypage';
 import BlogPage from './pages/blogpage';
+import OurCeoPage from './pages/ourceopage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route  path="/contact" element={<ContactPage/>}/>
           <Route  path="/gallery" element={<GalleryPage/>}/>
           <Route  path="/blog" element={<BlogPage/>}/>
+          <Route  path="/our-ceo" element={<OurCeoPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

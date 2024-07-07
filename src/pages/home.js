@@ -14,7 +14,6 @@ const Home = () => {
       {<Hero/>}
       {<WelcomeSection/>}
       {<OurProducts/>}
-      {<Competitors/>}
       {<Banners images={['images/asset 13.jpeg']}/>}
       {<Banners images={['images/asset 14.jpeg']}/>}
       {<Banners images={['images/asset 15.jpeg']}/>}

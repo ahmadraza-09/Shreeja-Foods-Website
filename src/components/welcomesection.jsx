@@ -2,12 +2,11 @@ import React from 'react';
 import '../css/welcome.css';
 
 const WelcomeSection = () => {
-
     return (
         <>
             <div className="welcome-section">
-                <h3>Naturally Processed</h3>
-                <h2>WELCOME TO SHREEJA FOODS & SPICES</h2>
+                <h2>WELCOME</h2>
+                <h2>SHREEJA FOODS SPICES PRIVATE LIMITED</h2>
                 <div className="welcome-cards">
                     <div className="welcome-card">
                         <div className="image-container">

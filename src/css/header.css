@@ -105,6 +105,32 @@
     transform: translateY(-5px);
 }
 
+.menu li h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about-dropdown {
+    position: relative;
+}
+
+.ceo-dropdown {
+    width: 100px;
+    position: absolute;
+    /* transform: translateY(-80px); */
+    display: none;
+    transition: all 0.5s ease-in-out;
+    background-color: #ed1b24;
+    color: #fff;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.about-dropdown:hover .ceo-dropdown {
+    /* transform: translateY(0px); */
+    display: block;
+}
+
 .selected::before {
     content: '';
     position: absolute;

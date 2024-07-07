@@ -14,18 +14,11 @@ const Footer = () => {
                 <img src="images/asset 0.png" alt="" />
                 <p>Healthy Food... Healthy Life...</p>
                 <div className="contact-col">
-                    <p>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>
-                          Reg.Off: 205,BlockA,Capital Tower,Frazer Road,Patns-800001.
-                          <br />
-                          <br />
-                          Factory: Near Krishna Niketan School,Jakariyapur,Patna-800007.
-                        </p>
-                    </p>
+                    <p><i class="fa-solid fa-location-dot"></i>Reg.Off: 205,BlockA,Capital Tower,Frazer Road,Patna-800001.</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Factory: Near Krishna Niketan School,Jakariyapur,Patna-800007.</p>
                 </div>
                 <div className="contact-col">
-                    <p><i class="fa-solid fa-phone-volume"></i><a href="tel:8102254452" target='_blank'>+91 8102254452</a></p>
+                    <p><i class="fa-solid fa-headset"></i><a href="tel:8102254452" target='_blank'>+91 8102254452</a></p>
                     <p><i class="fa-solid fa-envelope"></i><a href="mailto:shreejamasale@gmail.com" target='_blank'>shreejamasale@gmail.com</a></p>
                 </div>
                 <div className="contact-col">

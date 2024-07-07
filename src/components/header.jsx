@@ -52,7 +52,12 @@ const Header = () => {
 
                     <div className={`menu ${showMenu ? 'show' : ''}`}>
                         <li onClick={() => {navigate('/')}} className={`${location.pathname === '/' ? 'selected' : ''}`}>Home</li>
-                        <li onClick={() => {navigate('/about')}} className={`${location.pathname === '/about' ? 'selected' : ''}`}>About</li>
+
+                        <li className='about-dropdown'>
+                          <h3 onClick={() => {navigate('/about')}} className={`${location.pathname === '/about' ? 'selected' : ''}`}>About <i class="fa-solid fa-angle-down"></i></h3>  
+                          <h3 className='ceo-dropdown' onClick={() => {navigate('/our-ceo')}}>Our CEO's</h3>
+                        </li>
+
                         <li onClick={() => {navigate('/shop')}} className={`${location.pathname === '/shop' ? 'selected' : ''}`}>Shop</li>
                         <li onClick={() => {navigate('/blog')}} className={`${location.pathname === '/blog' ? 'selected' : ''}`}>Blog</li>
                         <li onClick={() => {navigate('/gallery')}} className={`${location.pathname === '/gallery' ? 'selected' : ''}`}>Gallery</li>

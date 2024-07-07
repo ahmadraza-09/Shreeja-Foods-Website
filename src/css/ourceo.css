@@ -1,0 +1,47 @@
+.our-ceo-section {
+    width: 100%;
+    height: fit-content;
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.our-ceo-section>h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.our-ceo-cards {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ceo-card {
+    width: 250px;
+    height: 320px;
+    /* border: 2px solid #000; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ceo-card img {
+    border-radius: 10px;
+}
+
+.ceo-card h4 {
+    color: #9b9898;
+    font-weight: 500;
+}

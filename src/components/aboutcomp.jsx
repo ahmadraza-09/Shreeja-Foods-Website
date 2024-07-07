@@ -1,8 +1,7 @@
 import React from 'react';
 import '../css/about.css';
-import Banners from '../components/banners';
 import LaunchedItem from './launcheditem';
-import Competitors from './competitors';
+
 
 const AboutComp = () => {
   const launchedItems = [
@@ -28,7 +27,7 @@ const AboutComp = () => {
         </div>
 
         <div className="about-us">
-          <h2>WELCOME TO SHREEJA FOODS & SPICES</h2>
+          <h2>WELCOME TO SHREEJA FOODS & SPICES PRIVATE LIMITED</h2>
           <div className="about-box">
             <div className="image-content">
               <img src="images/dryfruit11.png" alt="" />
@@ -79,8 +78,6 @@ const AboutComp = () => {
               ))}
             </div>
           </div>
-
-          <Competitors/>
 
           <div className="about-box">
             <h2>Our Vision & Mission</h2>
